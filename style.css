@@ -150,7 +150,87 @@
 
 /*Estilo de la sección hobbies siguiendo la metodologia de diseño mobile first*/
 
+.hobbies{
+    height: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
 
+.hobbies__title{
+    text-align: center;
+    font-weight: bold;
+    font-size: xx-large;
+    margin-bottom: 25px;
+}
+
+.hobbies__box{
+    height: 40%;
+    width: 40%;
+    background-color: #e9f4f4;
+    padding: 10px;
+    margin: 10px;
+}
+
+.hobbies__img{
+    flex-shrink: 0;
+    padding: 10px;
+}
+
+.hobbies__name{
+    font-size: larger;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.hobbies__line{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*Estilo de la seccion Formación academíca siguiendo la metodología de diseño mobile first*/
+
+.academic{
+    height: auto;
+    background-color: #b8e9e9;
+    padding: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.academic__title{
+    text-align: center;
+    font-weight: bold;
+    font-size: xx-large;
+    margin-bottom: 25px;
+}
+
+.academic__courses__item__img{
+    background-color: #e9f4f4;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 38%;
+}
+
+.academic__courses__item__title{
+    font-weight: bold;
+    font-size: larger;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.academic__courses__item__subtitle{
+    margin-bottom: 10px;
+}
+
+.academic__courses__box{
+    display: flex;
+    flex-direction: column;
+}
 
 @media(min-width:834px){
     /*Adecuaciones para la presentacion en dispositivos tablet*/
@@ -177,6 +257,26 @@
         width: 25%;
     }
 
+    .hobbies__box{
+        height: 50;
+        width: 25%;
+    }
+
+    .academic{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+   .academic__courses{
+    display: flex;
+    justify-content: space-between;
+   }
+
+   .academic__courses__item__img{
+    padding-left: 20%;
+    padding-right: 10%;
+    width: 70%;
+   }
 }
 
 @media(min-width:1440px){
@@ -211,5 +311,32 @@
         height: 50;
         width: 13%;
     }
+
+    .hobbies__box{
+        height: 50;
+        width: 13%;
+    }
+
+    .academic{
+        padding-left: 3%;
+        padding-right: 0%;
+        padding-bottom: 2%;
+    }
+
+   .academic__courses{
+    display: flex;
+    justify-content: space-around;
+   }
+
+   .academic__courses__item__img{
+    padding-left: 10%;
+    padding-right: 0%;
+    width: 80%;
+    height: 70%;
+   }
+
+   .academic__courses__box{
+    width: 35%;
+   }
 
 }
