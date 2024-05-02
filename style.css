@@ -232,6 +232,73 @@
     flex-direction: column;
 }
 
+/*Estilo sección experiencia profesional siguiendo la metodología mobile first*/
+
+.experience{
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+    align-items: center;
+}
+
+.experience__section__title{
+    font-size: xx-large;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.experiencie__box{
+    padding-left: 5%;
+}
+
+.experience__img{
+    width: 90%;
+}
+
+.experience__info{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.experience__title{
+    font-weight: bold;
+    font-size: x-large;
+    padding-bottom: 10px;
+}
+
+.experience__text{
+    padding-bottom: 3%;
+}
+
+.experience__description{
+    display: flex;
+    gap: 25px;
+    padding-bottom: 3%;
+}
+
+.experiencia__botao--repo{
+    width: 150px;
+    border-style:groove;
+    align-items: center;
+    padding: 10px 10px;
+    color: #5b2ab7;
+    font-weight: bold;
+    border-color: #5b2ab7;
+}
+    
+
+.experience__botao--demo{
+    width: 150px;
+    background-color: #5b2ab7;
+    border-style:groove;
+    align-items: center;
+    padding: 10px 10px;
+    color: #fffeff;
+    font-weight: bold;
+    border-color: #fffeff;
+
+}
+
 @media(min-width:834px){
     /*Adecuaciones para la presentacion en dispositivos tablet*/
     .menu__list__item__contato{
