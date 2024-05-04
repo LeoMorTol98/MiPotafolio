@@ -299,6 +299,16 @@
 
 }
 
+/*Estilo de la seccion contacto siguiendo metodologia de diseño mobile first*/
+
+.formcontato{
+    background-color: #b8e9e9;
+}
+
+.formcontato--esquerda{
+    display: none;
+}
+
 @media(min-width:834px){
     /*Adecuaciones para la presentacion en dispositivos tablet*/
     .menu__list__item__contato{
@@ -404,6 +414,24 @@
 
    .academic__courses__box{
     width: 35%;
+   }
+
+   .experience{
+    width: auto;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    align-items: flex-start;
+   }
+
+   .experience__section__title{
+    padding-left: 40%;
+   }
+
+   .experiencie__box{
+    display: flex;
+    gap:5%;
+    padding-left: 5%;
+    padding-bottom: 5%;
    }
 
 }
