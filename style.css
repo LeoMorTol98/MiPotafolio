@@ -305,8 +305,74 @@
     background-color: #b8e9e9;
 }
 
+.formcontato__text{
+    display: flex;
+    flex-direction: column;
+    padding: 8%;
+}
+
 .formcontato--esquerda{
     display: none;
+}
+
+.formcontato__title{
+    padding-bottom: 3%;
+    font-weight: bolder;
+    font-size: xx-large;
+    text-align: start;
+}
+
+.formcontato__subtext{
+    font-weight: 500;
+    font-size: x-large;
+}
+
+.formcontato__form{
+    padding-top: 3%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.formcontato__input{
+    height: 80px;
+    background-color: #e9f4f4;
+    border-radius: 0.5cm;
+}
+
+.formcontato__textarea{
+    height: 180px;
+    background-color: #e9f4f4;
+    border-radius: 0.5cm;
+}
+
+.formcontato__botao{
+    width: 40%;
+    background-color: #5b2ab7;
+    border-style:groove;
+    align-items: center;
+    padding: 10px 10px;
+    color: #fffeff;
+    font-weight: bold;
+    border-color: #fffeff;
+}
+
+
+/*Estilo de la sección footer siguiendo la metologia mobile first*/
+
+.footer{
+    background-color: #7418a2;
+}
+
+.footer__rodape{
+    padding: 10%;
+    text-align: center;
+}
+
+.footer__rodape p{
+    font-weight: bold;
+    font-size: large;
+    color: #e9f4f4;
 }
 
 @media(min-width:834px){
@@ -433,5 +499,21 @@
     padding-left: 5%;
     padding-bottom: 5%;
    }
+
+    .formcontato--esquerda{
+        display: flex;
+        padding: 5%;
+        padding-top: 8%; 
+        padding-bottom: 8%; 
+    }
+
+    .formcontato__contacto{
+        display: flex;
+        gap:10px;
+    }
+
+    .formcontato__text{
+        padding-left: 0%;
+    }
 
 }
