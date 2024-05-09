@@ -357,6 +357,10 @@
     border-color: #fffeff;
 }
 
+.formcontato__botao:disabled{
+    background-color: red;
+}
+
 
 /*Estilo de la sección footer siguiendo la metologia mobile first*/
 

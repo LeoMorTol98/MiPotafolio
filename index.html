@@ -259,12 +259,15 @@
                         <h2 class="formcontato__title">Contacto</h2>
                         <h3 class="formcontato__subtext">¿Quieres contactarme?</h3>
                         <h3 class="formcontato__subtext">Complete el siguiente formulario y me pondré en contacto con usted lo antes posible. </h3>
-                        <form class="formcontato__form" name="form">
-                            <input class="formcontato__input" type="text" name="nombre" placeholder="Nombre">
-                            <input class="formcontato__input" type="email" name="email" placeholder="E-mail">
-                            <input class="formcontato__input" type="text" name="asunto" placeholder="Asunto">
-                            <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensaje" placeholder="Mensaje"></textarea>
-                            <button type="submit" class="formcontato__botao">Enviar mensaje</button>
+                        <form class="formcontato__form" name="form" action="https://formsubmit.co/55d6e721f1719d2d447c9125c58a6ed2" method="POST">
+                            <input class="formcontato__input" id="nomb" type="text" onblur="ValidarNombre();" name="nombre" placeholder="Nombre">
+                            <input class="formcontato__input" id="emai" type="email" onblur="ValidarEmail();" name="email" placeholder="E-mail">
+                            <input class="formcontato__input" id="asunt" type="text" onblur="ValidarAsunto();" name="asunto" placeholder="Asunto">
+                            <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" onblur="ValidarMensaje();" name="mensaje" placeholder="Mensaje"></textarea>
+                            <p id="mensajeError"></p>
+                            <button type="submit" id="botonenv" class="formcontato__botao" onclick="validaciónBoton();">Enviar mensaje</button>
+                            <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+                            <input type="hidden" name="_captcha" value="false">
                         </form>
                     </div>
                 </div>
